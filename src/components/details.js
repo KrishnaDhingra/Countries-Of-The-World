@@ -11,15 +11,15 @@ export const Details = (props) => {
     let heading1 = [
         {
             heading: 'Native name',
-            value: {name}
+            value: name
         },
         {
             heading: 'Population',
-            value: {population}
+            value: population
         },
         {
             heading: 'Region',
-            value: {region}
+            value: region
         },
         {
             heading: 'Subregion',
@@ -27,7 +27,7 @@ export const Details = (props) => {
         },
         {
             heading: 'Capital',
-            value: {capital}
+            value: capital
         }
 
     ]
@@ -35,15 +35,15 @@ export const Details = (props) => {
     let heading2 = [
         {
             heading: 'Top Level Domain',
-            value: {name}
+            value: name
         },
         {
             heading: 'Currencies',
-            value: {name}
+            value: name
         },
         {
             heading: 'Languages',
-            value: {name}
+            value: name
         }
     ]
 
@@ -55,14 +55,14 @@ export const Details = (props) => {
                 
                 <Link to='/'><button className="outline-none bg-skin-navbarbg text-skin-base rounded px-6 py-3 shadow-md">Back</button></Link>
                 <div className="flex gap-12">
-                    <img className="" src={image} alt="" />
+                    <img className="details_flag_image" src={image} alt="" />
 
                     <div className="flex flex-col gap-4">
-                        <h1 className="font-bold text-4xl">Afghanistan</h1>
+                        <h1 className="font-bold text-4xl">{name}</h1>
 
-                        <div className="flex gap-48">
+                        <div className="flex gap-32">
 
-                            <div className="flex flex-col gap-1">
+                            <div className="flex flex-col gap-1 w-64">
 
                                 {heading1.map(element => {
                                     return (
@@ -75,7 +75,7 @@ export const Details = (props) => {
                             </div>
 
 
-                            <div className="flex flex-col gap-1">
+                            <div className="flex flex-col gap-1 w-72">
 
                                 {heading2.map(element => {
                                     return (

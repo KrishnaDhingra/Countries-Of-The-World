@@ -29,3 +29,7 @@ body {
 .rounded-pill{
   border-radius: 50%;
 }
+.details_flag_image{
+  width: 700px;
+  max-height: 425px;
+}
